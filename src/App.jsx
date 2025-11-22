@@ -1,4 +1,4 @@
-import { ShoppingCart, UserCog, UserRound } from "lucide-react";
+import { ShoppingCart, UserCog,} from "lucide-react";
 import { Routes, Route, Link } from "react-router-dom";
 
 // IMPORTA TUS PÁGINAS CORRECTAMENTE (PASCAL CASE)
