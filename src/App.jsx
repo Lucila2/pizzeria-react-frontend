@@ -11,6 +11,7 @@ import IniciarSesionPage from "./components/pages/IniciarSesionPage";
 import CarritoPage from "./components/pages/CarritoPage";
 import PedirAhoraPage from "./components/pages/PedirAhoraPage";
 import AdminPage from "./components/pages/AdminPage";
+import RegistrateAqui from "./components/pages/RegistrateAqui";
 
 
 function App() {
@@ -28,9 +29,9 @@ function App() {
           {/* LOGO */}
           <Link to="/" className="flex items-center gap-3">
             <div className=" w-[60px] h-[60px] bg-white  rounded-full  flex items-center justify-center 
-                border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] overflow-hidden">
+                border-4 border-b-gray-950 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] overflow-hidden">
               <img
-                src="/imgs/logo.png"
+                src="public/imgs/logo.png"
                 alt="logo"
                 className="w-12 h-12 object-contain"
               />
@@ -44,6 +45,9 @@ function App() {
 
           {/* MENÚ PRINCIPAL */}
           <ul className="flex items-center gap-8 text-sm font-bold text-black">
+            <li className="hover:text-yellow-600 cursor-pointer">
+              <Link to="/">Inicio</Link>
+            </li>
             <li className="hover:text-yellow-600 cursor-pointer">
               <Link to="/menu">Menú</Link>
             </li>
@@ -104,6 +108,7 @@ function App() {
           <Route path="/carrito" element={<CarritoPage />} />
           <Route path="/pedir-ahora" element={<PedirAhoraPage />} />
           <Route path="/admin" element={<AdminPage />} />
+          <Route path="/Registrate-aquí" element={<RegistrateAqui/>} />
         </Routes>
       </div>
 

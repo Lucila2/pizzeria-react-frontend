@@ -17,6 +17,17 @@ function AdminPage() {
         {/* BOTONES */}
         <div className="mt-10 flex flex-col gap-4">
 
+          {/* Inicio */}
+          <Link
+            to="/"
+            className="bg-[#fff176] hover:bg-[#ffee58] text-black font-bold 
+            border-4 border-black rounded-xl py-3 shadow-[5px_5px_0px_0px_rgba(0,0,0,1)] 
+            transition active:translate-y-1 active:shadow-none"
+          >
+            🏠 Inicio
+          </Link>
+
+          {/* Menú */}
           <Link
             to="/menu"
             className="bg-[#ffb74d] hover:bg-[#ffa726] text-black font-bold 
@@ -26,31 +37,64 @@ function AdminPage() {
             🍕 Gestionar Menú
           </Link>
 
+          {/* Promociones */}
           <Link
-            to="/pedir-ahora"
+            to="/promociones"
             className="bg-[#ffcc80] hover:bg-[#ffb74d] text-black font-bold 
             border-4 border-black rounded-xl py-3 shadow-[5px_5px_0px_0px_rgba(0,0,0,1)] 
             transition active:translate-y-1 active:shadow-none"
           >
-            📦 Ver Pedidos
+            🎉 Gestionar Promociones
           </Link>
 
+          {/* Sobre Nosotros */}
           <Link
-            to="/usuarios"
+            to="/sobre-nosotros"
             className="bg-[#ffe0b2] hover:bg-[#ffcc80] text-black font-bold 
-            border-4 border-black rounded-xl py-3 shadow-[5px_5px_0px_0px_rgba(0,0,0,1)]
+            border-4 border-black rounded-xl py-3 shadow-[5px_5px_0px_0px_rgba(0,0,0,1)] 
             transition active:translate-y-1 active:shadow-none"
           >
-            👤 Administrar Usuarios
+            🧑‍🍳 Sobre Nosotros
           </Link>
 
+          {/* Contacto */}
           <Link
             to="/contacto"
             className="bg-[#fff3e0] hover:bg-[#ffe0b2] text-black font-bold 
             border-4 border-black rounded-xl py-3 shadow-[5px_5px_0px_0px_rgba(0,0,0,1)]
             transition active:translate-y-1 active:shadow-none"
           >
-            ⚙ Contacto
+            📞 Contacto
+          </Link>
+
+          {/* Iniciar Sesión */}
+          <Link
+            to="/iniciar-sesion"
+            className="bg-[#ffe082] hover:bg-[#ffd54f] text-black font-bold 
+            border-4 border-black rounded-xl py-3 shadow-[5px_5px_0px_0px_rgba(0,0,0,1)]
+            transition active:translate-y-1 active:shadow-none"
+          >
+            🔐 Iniciar Sesión
+          </Link>
+
+          {/* Carrito */}
+          <Link
+            to="/carrito"
+            className="bg-[#ffab91] hover:bg-[#ff8a65] text-black font-bold 
+            border-4 border-black rounded-xl py-3 shadow-[5px_5px_0px_0px_rgba(0,0,0,1)]
+            transition active:translate-y-1 active:shadow-none"
+          >
+            🛒 Carrito
+          </Link>
+
+          {/* Pedir Ahora */}
+          <Link
+            to="/pedir-ahora"
+            className="bg-[#dcedc8] hover:bg-[#c5e1a5] text-black font-bold 
+            border-4 border-black rounded-xl py-3 shadow-[5px_5px_0px_0px_rgba(0,0,0,1)]
+            transition active:translate-y-1 active:shadow-none"
+          >
+            🚀 Pedir Ahora
           </Link>
 
         </div>

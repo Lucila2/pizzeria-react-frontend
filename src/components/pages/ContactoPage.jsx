@@ -1,3 +1,4 @@
+import { MapPin, Phone, Mail, Clock } from "lucide-react";
 function ContactoPage() {
   return (
     <div className="px-6 pt-10 pb-20 max-w-5xl mx-auto">
@@ -35,7 +36,7 @@ function ContactoPage() {
               <input
                 type="email"
                 className="w-full border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-yellow-500"
-                placeholder="correo@ejemplo.com"
+                placeholder="ejemplo@gmail.com"
               />
             </div>
 
@@ -62,30 +63,45 @@ function ContactoPage() {
 
         {/* INFORMACIÓN DE CONTACTO + MAPA */}
         <div className="space-y-6">
+{/* INFO */}
+<div className="bg-white shadow-lg rounded-2xl p-6">
+  <h2 className="text-2xl font-bold mb-4 text-center">
+    Información
+  </h2>
 
-          {/* INFO */}
-          <div className="bg-white shadow-lg rounded-2xl p-6">
-            <h2 className="text-2xl font-bold mb-4 text-center">
-              Información
-            </h2>
+  <p className="mb-3 flex items-center gap-2">
+    <MapPin className="w-5 h-5" />
+    <strong>Dirección:</strong> Jr. Ayacucho #.. - Celenín, Perú
+  </p>
 
-            <p className="mb-2"><strong>📍 Dirección:</strong> Av. Principal 123, Lima, Perú</p>
-            <p className="mb-2"><strong>📞 Teléfono:</strong> +51 999 999 999</p>
-            <p className="mb-2"><strong>✉ Correo:</strong> ohanapizzas@gmail.com</p>
-            <p className="mb-2"><strong>🕒 Horario:</strong> 12:00 pm – 11:00 pm</p>
-          </div>
+  <p className="mb-3 flex items-center gap-2">
+    <Phone className="w-5 h-5" />
+    <strong>Teléfono:</strong> +51 900 000 000
+  </p>
 
-          {/* MAPA */}
-          <div className="w-full h-64 rounded-2xl overflow-hidden shadow-lg">
-            <iframe
-              title="Mapa"
-              width="100%"
-              height="100%"
-              loading="lazy"
-              allowFullScreen
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.7394477231136!2d-77.04279352488217!3d-12.059565188158268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8c57ff0b249%3A0x5a63baba7c1a5db!2sLima!5e0!3m2!1ses!2spe!4v1698712345678"
-            ></iframe>
-          </div>
+  <p className="mb-3 flex items-center gap-2">
+    <Mail className="w-5 h-5" />
+    <strong>Correo:</strong> ohanapizzas@gmail.com
+  </p>
+
+  <p className="mb-3 flex items-center gap-2">
+    <Clock className="w-5 h-5" />
+    <strong>Horario:</strong> 6:00 pm - 11:00 pm
+  </p>
+</div>
+
+{/* MAPA */}
+<div className="w-full h-64 rounded-2xl overflow-hidden shadow-lg">
+  <iframe
+    title="Mapa"
+    width="100%"
+    height="100%"
+    loading="lazy"
+    allowFullScreen
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2337.7966327374634!2d-78.14798618840922!3d-6.868651031262374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91b3cd0030f39669%3A0xdf36bf68323020a8!2sPizzer%C3%ADa%20Ohana!5e1!3m2!1ses-419!2spe!4v1764012075305!5m2!1ses-419!2spe"
+  ></iframe>
+</div>
+
 
         </div>
 

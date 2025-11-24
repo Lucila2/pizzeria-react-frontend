@@ -45,7 +45,7 @@ function HomePage() {
         {/* IMAGEN */}
         <div className="flex justify-center md:justify-end -mt-18">
           <img
-            src="/imgs/pizza_menu_princ.png"
+            src="public/imgs/logo.png"
             alt="Pizza"
             className="w-90 h-90 rounded-full shadow-lg border-4 border-black object-cover"
           />
