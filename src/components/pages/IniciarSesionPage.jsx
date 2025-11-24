@@ -49,9 +49,9 @@ export default function LoginPage() {
 
         {/* Separador */}
         <div className="flex items-center gap-3 mt-6">
-          <div className="w-full h-[1px] bg-gray-300"></div>
+          <div className="w-full h-px bg-gray-300"></div>
           <span className="text-gray-500 text-sm">o</span>
-          <div className="w-full h-[1px] bg-gray-300"></div>
+          <div className="w-full h-px bg-gray-300"></div>
         </div>
 
         {/* Crear cuenta */}
