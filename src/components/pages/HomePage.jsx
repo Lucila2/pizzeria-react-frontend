@@ -7,20 +7,11 @@ function HomePage() {
   return (
     <main className="w-full bg-white flex flex-col min-h-screen">
 
-      {/* IMAGEN HERO AL INICIO */}
-      <section className="w-full bg-gray-100 py-12 flex justify-center">
-        <div className="w-72 h-72 md:w-96 md:h-96 rounded-full shadow-xl border-4 border-black overflow-hidden">
-          <img
-            src="/imgs/logo.png"
-            alt="Pizza Ohana"
-            className="w-full h-full object-cover"
-          />
-        </div>
-      </section>
-
-      {/* TEXTO Y BOTONES */}
+      {/* CONTENIDO PRINCIPAL: TEXTO, BOTONES E IMAGEN */}
       <div className="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-        <div className="text-center md:text-left">
+        
+        {/* TEXTO Y BOTONES (COLUMNA 1 en MD) */}
+        <div className="text-center md:text-left order-2 md:order-1"> {/* order-2 asegura que el texto esté abajo en móvil */}
           <h2 className="text-4xl md:text-5xl font-extrabold text-black mb-6">
             Las Mejores Pizzas Artesanales de la Ciudad
           </h2>
@@ -42,6 +33,18 @@ function HomePage() {
             </button>
           </div>
         </div>
+        
+        {/* IMAGEN HERO (COLUMNA 2 en MD) */}
+        <div className="flex justify-center md:justify-end order-1 md:order-2"> {/* order-1 asegura que la imagen esté arriba en móvil */}
+          <div className="w-72 h-72 md:w-96 md:h-96 rounded-full shadow-xl border-4 border-black overflow-hidden bg-gray-100">
+            <img
+              src="/imgs/logo.png"
+              alt="Pizza Ohana"
+              className="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+
       </div>
 
       {/* FOOTER SENCILLO */}
